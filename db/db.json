@@ -1,0 +1,11 @@
+{
+  "restaurant": [
+    {
+      "id": "1",
+      "name": "Swiggy",
+      "email": "swiggy@test.com",
+      "address": "Hyderabad",
+      "rating": "5"
+    }
+  ]
+}
