@@ -11,8 +11,134 @@
       "id": "2",
       "name": "Zomato",
       "email": "zomato@test.com",
+      "address": "Bangalore",
+      "rating": "4"
+    },
+    {
+      "id": "3",
+      "name": "Uber Eats",
+      "email": "ubereats@test.com",
+      "address": "New Delhi",
+      "rating": "4"
+    },
+    {
+      "id": "4",
+      "name": "Foodpanda",
+      "email": "foodpanda@test.com",
+      "address": "Mumbai",
+      "rating": "3"
+    },
+    {
+      "id": "5",
+      "name": "Domino's",
+      "email": "dominos@test.com",
+      "address": "Chennai",
+      "rating": "5"
+    },
+    {
+      "id": "6",
+      "name": "Pizza Hut",
+      "email": "pizzahut@test.com",
+      "address": "Kolkata",
+      "rating": "4"
+    },
+    {
+      "id": "7",
+      "name": "KFC",
+      "email": "kfc@test.com",
       "address": "Pune",
-      "rating": "4.5"
+      "rating": "3"
+    },
+    {
+      "id": "8",
+      "name": "McDonald's",
+      "email": "mcdonalds@test.com",
+      "address": "Ahmedabad",
+      "rating": "4"
+    },
+    {
+      "id": "9",
+      "name": "Burger King",
+      "email": "burgerking@test.com",
+      "address": "Jaipur",
+      "rating": "3"
+    },
+    {
+      "id": "10",
+      "name": "Subway",
+      "email": "subway@test.com",
+      "address": "Lucknow",
+      "rating": "4"
+    },
+    {
+      "id": "11",
+      "name": "Dunkin' Donuts",
+      "email": "dunkindonuts@test.com",
+      "address": "Surat",
+      "rating": "5"
+    },
+    {
+      "id": "12",
+      "name": "Starbucks",
+      "email": "starbucks@test.com",
+      "address": "Kanpur",
+      "rating": "4"
+    },
+    {
+      "id": "13",
+      "name": "Cafe Coffee Day",
+      "email": "cafecoffeeday@test.com",
+      "address": "Indore",
+      "rating": "3"
+    },
+    {
+      "id": "14",
+      "name": "Haldiram's",
+      "email": "haldirams@test.com",
+      "address": "Patna",
+      "rating": "5"
+    },
+    {
+      "id": "15",
+      "name": "Bikanervala",
+      "email": "bikanervala@test.com",
+      "address": "Nagpur",
+      "rating": "4"
+    },
+    {
+      "id": "16",
+      "name": "Taj Hotels",
+      "email": "tajhotels@test.com",
+      "address": "Ghaziabad",
+      "rating": "5"
+    },
+    {
+      "id": "17",
+      "name": "Oberoi Hotels",
+      "email": "oberoihotels@test.com",
+      "address": "Faridabad",
+      "rating": "4"
+    },
+    {
+      "id": "18",
+      "name": "ITC Hotels",
+      "email": "itchotels@test.com",
+      "address": "Agra",
+      "rating": "5"
+    },
+    {
+      "id": "19",
+      "name": "Marriott Hotels",
+      "email": "marriotthotels@test.com",
+      "address": "Guwahati",
+      "rating": "4"
+    },
+    {
+      "id": "20",
+      "name": "Hilton Hotels",
+      "email": "hiltonhotels@test.com",
+      "address": "Bhopal",
+      "rating": "5"
     }
   ]
 }
