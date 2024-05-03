@@ -6,6 +6,13 @@
       "email": "swiggy@test.com",
       "address": "Hyderabad",
       "rating": "5"
+    },
+    {
+      "id": "2",
+      "name": "Zomato",
+      "email": "zomato@test.com",
+      "address": "Pune",
+      "rating": "4.5"
     }
   ]
 }
