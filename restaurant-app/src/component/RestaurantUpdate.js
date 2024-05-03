@@ -12,7 +12,7 @@ function RestaurantUpdate() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/restaurant/${id}`).then((response) => {
+        fetch(`${process.env.REACT_APP_API_URL}/restaurant/${id}`).then((response) => {
             response.json().then((result) => {
                 // console.log(result);
                 setState({
@@ -27,7 +27,7 @@ function RestaurantUpdate() {
 
     function Update() {
         console.log(state);
-        fetch(`http://localhost:3001/restaurant/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/restaurant/${id}`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'

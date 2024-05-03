@@ -13,7 +13,7 @@ class RestaurantCreate extends Component {
     }
     create() {
         // console.log(this.state);
-        fetch("http://localhost:3001/restaurant", {
+        fetch(`${process.env.REACT_APP_API_URL}/restaurant`, {
             method: "Post",
             headers: {
                 'Content-Type': 'application/json'
