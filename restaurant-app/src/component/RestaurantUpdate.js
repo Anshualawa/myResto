@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import NavBarManu from './NavBarManu';
 function RestaurantUpdate() {
     const [state, setState] = useState({
         name: '',
