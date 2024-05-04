@@ -32,6 +32,7 @@ class RestaurantCreate extends Component {
     }
 
     render() {
+        document.title = 'Restaurant Create | Alawa'
         return (
             <>
                 <NavBarManu />

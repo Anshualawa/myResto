@@ -3,6 +3,7 @@ import NavBarManu from './NavBarManu';
 import { useNavigate } from 'react-router-dom';
 class Home extends Component {
     render() {
+        document.title = 'Home | Alawa';
         return (
             <div>
                 <NavBarManu />

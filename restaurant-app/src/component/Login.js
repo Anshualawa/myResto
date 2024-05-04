@@ -4,6 +4,7 @@ import { faUnlock, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import NavBarManu from './NavBarManu';
 const Login = () => {
+    document.title='Login | Alawa';
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
     const [password, setPassword] = useState(null);
