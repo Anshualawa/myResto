@@ -48,7 +48,7 @@ class RestaurantList extends Component {
         for (let i = 1; i <= totalPages; i++) {
             pageNumbers.push(
                 <button key={i} onClick={() => this.changePage(i)}
-                    className={`px-3 py-1 mx-1 rounded ${currentPage === i ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'}`}>
+                    className={`px-3 py-1 mx-1 rounded ${currentPage === i ? 'bg-blue-300 text-white' : 'bg-gray-100 text-gray-500'}`}>
                     {i}
                 </button>
             );
@@ -79,12 +79,12 @@ class RestaurantList extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Restaurant List</h1>
+            <div className='w-full m-auto  '>
+                <h1 className='text-xl py-5 text-center font-bold text-gray-700'>Restaurant List</h1>
                 {
                     this.state.list ?
-                        <div className='w-4/5 m-auto '>
-                            <div className="overflow-x-auto">
+                        <div className=' bg-gray-50 border'>
+                            <div className="overflow-x-auto ">
                                 <table className="table-auto border min-w-full divide-y divide-gray-200">
                                     <thead className='bg-gray-50 '>
                                         <tr>
@@ -101,12 +101,12 @@ class RestaurantList extends Component {
                                             this.getCurrentData().map((item, index) => {
                                                 const serialNumber = (this.state.currentPage - 1) * this.state.itemsPerPage + index + 1;
                                                 return <tr key={index} className="hover:bg-gray-100">
-                                                    <td className='px-6 py-4 text-center whitespace-nowrap'>{serialNumber}</td>
-                                                    <td className='px-6 py-4 text-left whitespace-nowrap'>{item.name}</td>
-                                                    <td className='px-6 py-4 text-left whitespace-nowrap'>{item.email}</td>
-                                                    <td className='px-6 py-4 text-left whitespace-nowrap'>{item.address}</td>
-                                                    <td className='px-6 py-4 text-center whitespace-nowrap'>{item.rating}</td>
-                                                    <td className='px-6 py-4 text-center whitespace-nowrap'>
+                                                    <td className='px-6 py-3 text-center whitespace-nowrap'>{serialNumber}</td>
+                                                    <td className='px-6 py-3 text-left whitespace-nowrap'>{item.name}</td>
+                                                    <td className='px-6 py-3 text-left whitespace-nowrap'>{item.email}</td>
+                                                    <td className='px-6 py-3 text-left whitespace-nowrap'>{item.address}</td>
+                                                    <td className='px-6 py-3 text-center whitespace-nowrap'>{item.rating}</td>
+                                                    <td className='px-6 py-3 text-center whitespace-nowrap'>
                                                         <div className=' flex gap-5 justify-center'>
                                                             <span className='text-blue-500'><Link to={"/update/" + item.id}><FontAwesomeIcon icon={faPenToSquare} /></Link></span>
                                                             <span className='text-red-500' onClick={() => { this.Delete(item.id) }}><FontAwesomeIcon icon={faTrash} /></span>
