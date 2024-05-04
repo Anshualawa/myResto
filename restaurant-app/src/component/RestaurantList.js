@@ -9,7 +9,7 @@ class RestaurantList extends Component {
         this.state = {
             list: null,
             currentPage: 1,
-            itemsPerPage: 5,
+            itemsPerPage: 10,
         }
     }
     componentDidMount() {
