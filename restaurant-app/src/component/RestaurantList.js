@@ -78,6 +78,7 @@ class RestaurantList extends Component {
 
 
     render() {
+        document.title = 'Restaurant List | Alawa';
         return (
             <>
                 <NavBarManu />
