@@ -146,27 +146,6 @@
       "email": "hiltonhotels@test.com",
       "address": "Bhopal",
       "rating": "5"
-    },
-    {
-      "id": "9857",
-      "name": "tesr",
-      "email": "adf@ga.com",
-      "address": "adfadsf",
-      "rating": "4.5"
-    },
-    {
-      "id": "d417",
-      "name": "asdad",
-      "email": "adsf@ads.com",
-      "address": "dasfsd",
-      "rating": "4"
-    },
-    {
-      "id": "74d5",
-      "name": "dasfads",
-      "email": "adfdsa@gma.com",
-      "address": "adfsdf",
-      "rating": "2"
     }
   ]
 }
