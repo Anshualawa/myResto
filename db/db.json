@@ -147,5 +147,213 @@
       "address": "Bhopal",
       "rating": "5"
     }
+  ],
+  "cloudKitchen_order": [
+    {
+      "customer_id": "2024alawa0001",
+      "order_id": "202400000001",
+      "item_id": "Pizza",
+      "item_name": "Pizza",
+      "item_qty": 2,
+      "price": 10.99,
+      "address": "Hyderabad",
+      "payment_status": "Cash",
+      "datetime": "",
+      "remark": "Delicious pizza topped with cheese and pepperoni."
+    }
+  ],
+  "cloudKitchen_food_items": [
+    
+  {
+    "item_id": "1001",
+    "item_type": "veg",
+    "item_name": "Veg Pizza",
+    "image": "pizza.jpg",
+    "description": "Delicious veg pizza topped with cheese and assorted vegetables.",
+    "datetime": "",
+    "price": 10.99
+  },
+  {
+    "item_id": "1002",
+    "item_type": "non-veg",
+    "item_name": "Chicken Burger",
+    "image": "burger.jpg",
+    "description": "Juicy chicken burger with lettuce, tomato, and cheese.",
+    "datetime": "",
+    "price": 8.99
+  },
+  {
+    "item_id": "1003",
+    "item_type": "veg",
+    "item_name": "Creamy Pasta",
+    "image": "pasta.jpg",
+    "description": "Creamy pasta with mushrooms, spinach, and parmesan cheese.",
+    "datetime": "",
+    "price": 12.99
+  },
+  {
+    "item_id": "1004",
+    "item_type": "veg",
+    "item_name": "Greek Salad",
+    "image": "salad.jpg",
+    "description": "Fresh Greek salad with lettuce, tomatoes, cucumbers, olives, and feta cheese.",
+    "datetime": "",
+    "price": 6.99
+  },
+  {
+    "item_id": "1005",
+    "item_type": "veg",
+    "item_name": "Veggie Sandwich",
+    "image": "sandwich.jpg",
+    "description": "Healthy veggie sandwich with avocado, cucumber, lettuce, and tomato.",
+    "datetime": "",
+    "price": 5.99
+  },
+  {
+    "item_id": "1006",
+    "item_type": "veg",
+    "item_name": "Tomato Soup",
+    "image": "soup.jpg",
+    "description": "Classic tomato soup with basil and croutons.",
+    "datetime": "",
+    "price": 4.99
+  },
+  {
+    "item_id": "1007",
+    "item_type": "veg",
+    "item_name": "Veggie Wrap",
+    "image": "wrap.jpg",
+    "description": "Vegetarian wrap filled with hummus, roasted vegetables, and spinach.",
+    "datetime": "",
+    "price": 7.99
+  },
+  {
+    "item_id": "1008",
+    "item_type": "veg",
+    "item_name": "Vegetable Fried Rice",
+    "image": "rice.jpg",
+    "description": "Vegetable fried rice with carrots, peas, and green beans.",
+    "datetime": "",
+    "price": 9.99
+  },
+  {
+    "item_id": "1009",
+    "item_type": "veg",
+    "item_name": "Vegetable Noodles",
+    "image": "noodles.jpg",
+    "description": "Stir-fried vegetable noodles with tofu and soy sauce.",
+    "datetime": "",
+    "price": 8.99
+  },
+  {
+    "item_id": "1010",
+    "item_type": "veg",
+    "item_name": "Chocolate Cake",
+    "image": "cake.jpg",
+    "description": "Decadent chocolate cake with creamy frosting.",
+    "datetime": "",
+    "price": 14.99
+  },
+  {
+    "item_id": "1011",
+    "item_type": "veg",
+    "item_name": "Berry Smoothie",
+    "image": "smoothie.jpg",
+    "description": "Refreshing berry smoothie with strawberries, blueberries, and bananas.",
+    "datetime": "",
+    "price": 6.99
+  },
+  {
+    "item_id": "1012",
+    "item_type": "veg",
+    "item_name": "Orange Juice",
+    "image": "juice.jpg",
+    "description": "Freshly squeezed orange juice with pulp.",
+    "datetime": "",
+    "price": 3.99
+  },
+  {
+    "item_id": "1013",
+    "item_type": "veg",
+    "item_name": "Vegetarian Taco",
+    "image": "taco.jpg",
+    "description": "Vegetarian taco filled with black beans, corn, and avocado.",
+    "datetime": "",
+    "price": 5.99
+  },
+  {
+    "item_id": "1014",
+    "item_type": "veg",
+    "item_name": "French Fries",
+    "image": "fries.jpg",
+    "description": "Crispy French fries served with ketchup.",
+    "datetime": "",
+    "price": 3.99
+  },
+  {
+    "item_id": "1015",
+    "item_type": "veg",
+    "item_name": "Glazed Donut",
+    "image": "donut.jpg",
+    "description": "Classic glazed donut with sprinkles.",
+    "datetime": "",
+    "price": 2.99
+  },
+  {
+    "item_id": "1016",
+    "item_type": "veg",
+    "item_name": "Blueberry Muffin",
+    "image": "muffin.jpg",
+    "description": "Moist blueberry muffin topped with streusel.",
+    "datetime": "",
+    "price": 3.49
+  },
+  {
+    "item_id": "1017",
+    "item_type": "veg",
+    "item_name": "Chocolate Chip Cookie",
+    "image": "cookie.jpg",
+    "description": "Soft and chewy chocolate chip cookie.",
+    "datetime": "",
+    "price": 1.99
+  },
+  {
+    "item_id": "1018",
+    "item_type": "non-veg",
+    "item_name": "California Roll",
+    "image": "sushi.jpg",
+    "description": "California roll with crab, avocado, and cucumber.",
+    "datetime": "",
+    "price": 11.99
+  },
+  {
+    "item_id": "1019",
+    "item_type": "non-veg",
+    "item_name": "Ribeye Steak",
+    "image": "steak.jpg",
+    "description": "Juicy ribeye steak cooked to perfection.",
+    "datetime": "",
+    "price": 19.99
+  },
+  {
+    "item_id": "1020",
+    "item_type": "non-veg",
+    "item_name": "Grilled Salmon",
+    "image": "fish.jpg",
+    "description": "Grilled salmon fillet with lemon butter sauce.",
+    "datetime": "",
+    "price": 16.99
+  }
+  ],
+  "customers": [
+    {
+      "customer_id": "2024alawa0001",
+      "last_order_id": "202400000001",
+      "customer_name": "alawa",
+      "wallate_ballance": 10.99,
+      "contact_number": "123456789",
+      "address": "Hyderabad",
+      "datetime": ""
+    }
   ]
 }

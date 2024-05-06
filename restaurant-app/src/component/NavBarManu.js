@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faList, faSearch, faAdd, faUser, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faList, faSearch, faAdd, faUser, faBars, faBowlFood } from '@fortawesome/free-solid-svg-icons';
 
 class NavBarMenu extends Component {
     constructor(props) {
@@ -25,7 +25,7 @@ class NavBarMenu extends Component {
                 <div className='container mx-auto px-4 md:px-6 lg:px-8'>
                     <div className='flex justify-between items-center py-4'>
                         <div className='flex items-center'>
-                            <p className='text-2xl md:text-3xl lg:text-4xl font-bold'><Link to="/">Vendors</Link></p>
+                            <p className='text-2xl md:text-3xl lg:text-4xl font-bold'><Link to="/">(^_^)</Link></p>
                         </div>
                         <div className='md:hidden'>
                             <button onClick={this.toggleMenu} className="text-xs hover:bg-slate-200 hover:text-black p-2">
@@ -34,6 +34,7 @@ class NavBarMenu extends Component {
                         </div>
                         <div className={`md:flex justify-between items-center gap-5 ${showMenu ? 'block' : 'hidden'}`}>
                             <NavLink to="/" icon={faHome}>Home</NavLink>
+                            <NavLink to="/hunger" icon={faBowlFood}>Hungger</NavLink>
                             {
                                 localStorage.getItem('login') ?
                                     <>

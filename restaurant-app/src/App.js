@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router, Route, Routes, Navigate
 } from 'react-router-dom';
 import Home, { PageNotFound } from './component/Home';
+import Hungger from './component/CloudKitchen/Hungger';
 import RestaurantList from './component/RestaurantList';
 import RestaurantCreate from './component/RestaurantCreate';
 import RestaurantUpdate from './component/RestaurantUpdate';
@@ -19,6 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/hunger' element={<Hungger />} />
           <Route path='/list' element={<RestaurantList />} />
           {/* <Protected exact path="/" component={RestaurantList}/> */}
 
