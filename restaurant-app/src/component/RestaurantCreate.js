@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHotel, faAdd } from '@fortawesome/free-solid-svg-icons';
+import { faHotel, faAdd, faPenToSquare, faTrash, faL } from '@fortawesome/free-solid-svg-icons';
 import NavBarManu from './NavBarManu';
 // import { useNavigate } from 'react-router-dom';
 class RestaurantCreate extends Component {
@@ -64,6 +64,38 @@ class RestaurantCreate extends Component {
                             onClick={() => { this.create() }}> <FontAwesomeIcon icon={faAdd} /> Add Restaurant</button>
                     </div>
                 </div>
+
+
+                {
+                    this.state.name ?
+                        <div className='mt-5 w-2/3 m-auto bg-gray-50 border'>
+                            <div className="overflow-x-auto ">
+                                <table className="table-auto border min-w-full divide-y divide-gray-200">
+                                    <thead className='bg-gray-50 '>
+                                        <tr>
+                                            <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left font-medium text-gray-500 uppercase tracking-wider'>Name</th>
+                                            <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left font-medium text-gray-500 uppercase tracking-wider'>Email</th>
+                                            <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left font-medium text-gray-500 uppercase tracking-wider'>Address</th>
+                                            <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center font-medium text-gray-500 uppercase tracking-wider'>Rating</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className='bg-white divide-y divide-gray-200'>
+                                        <tr className="hover:bg-gray-100">
+                                            <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left whitespace-nowrap'>{this.state.name}</td>
+                                            <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left whitespace-nowrap'>{this.state.email}</td>
+                                            <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left whitespace-nowrap'>{this.state.address}</td>
+                                            <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center whitespace-nowrap'>{this.state.rating}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        : ''
+                }
+
+
+
             </>
 
         );

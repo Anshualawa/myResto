@@ -4,7 +4,7 @@ import { faUnlock, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import NavBarManu from './NavBarManu';
 const Login = () => {
-    document.title='Login | Alawa';
+    document.title = 'Login | Alawa';
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
     const [password, setPassword] = useState(null);
@@ -29,7 +29,7 @@ const Login = () => {
     return (
         <>
             <NavBarManu />
-            <div className='w-2/5 lg:w-1/5 m-auto text-left mt-10 border shadow-xl rounded-xl bg-white'>
+            <div className='w-3/4 md:w-2/4 lg:w-1/3 m-auto text-left mt-10 border shadow-xl rounded-xl bg-white'>
                 <h1 className='text-xl font-bold py-3 lg:py-4 text-center bg-gray-200 rounded-t-xl'>
                     <FontAwesomeIcon icon={faLaptopCode} /> Admin Login
                 </h1>

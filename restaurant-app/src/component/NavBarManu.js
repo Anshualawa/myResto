@@ -1,30 +1,50 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faList, faSearch, faAdd, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faList, faSearch, faAdd, faUser, faBars } from '@fortawesome/free-solid-svg-icons';
 
-class NavBarManu extends Component {
+class NavBarMenu extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showMenu: false
+        };
+    }
+
+    toggleMenu = () => {
+        this.setState(prevState => ({
+            showMenu: !prevState.showMenu
+        }));
+    };
+
     render() {
+        const { showMenu } = this.state;
+
         return (
-            <div>
-                <div className='w-full m-auto flex justify-center bg-indigo-500 text-white'>
-                    <div className='w-1/6 flex justify-center items-center '><p className='text-2xl font-bold'><Link to="/">Vendors</Link></p></div>
-                    <div className='w-3/5'>
-                        <div className='flex py-2 justify-between gap-4 '>
-                            <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full text-center'><Link to="/"><FontAwesomeIcon icon={faHome} /> Home</Link></div>
+            <div className="bg-indigo-500 text-white">
+                <div className='container mx-auto px-4 md:px-6 lg:px-8'>
+                    <div className='flex justify-between items-center py-4'>
+                        <div className='flex items-center'>
+                            <p className='text-2xl md:text-3xl lg:text-4xl font-bold'><Link to="/">Vendors</Link></p>
+                        </div>
+                        <div className='md:hidden'>
+                            <button onClick={this.toggleMenu} className="text-xs hover:bg-slate-200 hover:text-black p-2">
+                                Menu <FontAwesomeIcon icon={faBars} />
+                            </button>
+                        </div>
+                        <div className={`md:flex justify-between items-center gap-5 ${showMenu ? 'block' : 'hidden'}`}>
+                            <NavLink to="/" icon={faHome}>Home</NavLink>
                             {
                                 localStorage.getItem('login') ?
                                     <>
-                                        <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full text-center'><Link to="/list"><FontAwesomeIcon icon={faList} /> List</Link></div>
-                                        <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full text-center'><Link to="/create"><FontAwesomeIcon icon={faAdd} /> Create</Link></div>
-                                        <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full text-center'><Link to="/search"><FontAwesomeIcon icon={faSearch} /> Search</Link></div>
-                                        <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full text-center'><Link to="/logout"><FontAwesomeIcon icon={faUser} /> Logout</Link></div>
+                                        <NavLink to="/list" icon={faList}>List</NavLink>
+                                        <NavLink to="/create" icon={faAdd}>Create</NavLink>
+                                        <NavLink to="/search" icon={faSearch}>Search</NavLink>
+                                        <NavLink to="/logout" icon={faUser}>Logout</NavLink>
                                     </>
                                     :
-                                    <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full text-center'><Link to="/login"><FontAwesomeIcon icon={faUser} /> Login</Link></div>
+                                    <NavLink to="/login" icon={faUser}>Login</NavLink>
                             }
-                            {/* <div className='p-2 text-xl hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full'><Link to="/details">Details</Link></div> */}
-                            {/* <div className='p-2 hover:shadow hover:bg-slate-200 font-bold hover:text-black rounded-md  size-full'><Link to="/update">Update</Link></div> */}
                         </div>
                     </div>
                 </div>
@@ -33,4 +53,13 @@ class NavBarManu extends Component {
     }
 }
 
-export default NavBarManu;
+const NavLink = ({ to, icon, children }) => (
+    <div className='p-2 text-xs md:text-lg lg:text-xl hover:bg-slate-200 hover:text-black rounded-xl border'>
+        <Link to={to} className="flex items-center">
+            <FontAwesomeIcon icon={icon} className="mr-2" />
+            {children}
+        </Link>
+    </div>
+);
+
+export default NavBarMenu;

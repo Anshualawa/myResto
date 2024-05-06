@@ -91,12 +91,12 @@ class RestaurantList extends Component {
                                     <table className="table-auto border min-w-full divide-y divide-gray-200">
                                         <thead className='bg-gray-50 '>
                                             <tr>
-                                                <th className='px-6 py-3 text-center font-medium text-gray-500 uppercase tracking-wider'>S.No</th>
-                                                <th className='px-6 py-3 text-left font-medium text-gray-500 uppercase tracking-wider'>Name</th>
-                                                <th className='px-6 py-3 text-left font-medium text-gray-500 uppercase tracking-wider'>Email</th>
-                                                <th className='px-6 py-3 text-left font-medium text-gray-500 uppercase tracking-wider'>Address</th>
-                                                <th className='px-6 py-3 text-center font-medium text-gray-500 uppercase tracking-wider'>Rating</th>
-                                                <th className='px-6 py-3 text-center font-medium text-gray-500 uppercase tracking-wider'>Operation</th>
+                                                <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center font-medium text-gray-500 uppercase tracking-wider'>S.No</th>
+                                                <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left font-medium text-gray-500 uppercase tracking-wider'>Name</th>
+                                                <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left font-medium text-gray-500 uppercase tracking-wider'>Email</th>
+                                                <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left font-medium text-gray-500 uppercase tracking-wider'>Address</th>
+                                                <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center font-medium text-gray-500 uppercase tracking-wider'>Rating</th>
+                                                <th className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center font-medium text-gray-500 uppercase tracking-wider'>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody className='bg-white divide-y divide-gray-200'>
@@ -104,13 +104,13 @@ class RestaurantList extends Component {
                                                 this.getCurrentData().map((item, index) => {
                                                     const serialNumber = (this.state.currentPage - 1) * this.state.itemsPerPage + index + 1;
                                                     return <tr key={index} className="hover:bg-gray-100">
-                                                        <td className='px-6 py-3 text-center whitespace-nowrap'>{serialNumber}</td>
-                                                        <td className='px-6 py-3 text-left whitespace-nowrap'>{item.name}</td>
-                                                        <td className='px-6 py-3 text-left whitespace-nowrap'>{item.email}</td>
-                                                        <td className='px-6 py-3 text-left whitespace-nowrap'>{item.address}</td>
-                                                        <td className='px-6 py-3 text-center whitespace-nowrap'>{item.rating}</td>
-                                                        <td className='px-6 py-3 text-center whitespace-nowrap'>
-                                                            <div className=' flex gap-5 justify-center'>
+                                                        <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center whitespace-nowrap'>{serialNumber}</td>
+                                                        <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left whitespace-nowrap'>{item.name}</td>
+                                                        <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left whitespace-nowrap'>{item.email}</td>
+                                                        <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-left whitespace-nowrap'>{item.address}</td>
+                                                        <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center whitespace-nowrap'>{item.rating}</td>
+                                                        <td className='px-1 py-1 md:px-6 md:py-3 text-xs md:text-md lg:text-lg text-center whitespace-nowrap'>
+                                                            <div className='px-1 py-1 flex  justify-between'>
                                                                 <span className='text-blue-500'><Link to={"/update/" + item.id}><FontAwesomeIcon icon={faPenToSquare} /></Link></span>
                                                                 <span className='text-red-500' onClick={() => { this.Delete(item.id) }}><FontAwesomeIcon icon={faTrash} /></span>
                                                             </div>
