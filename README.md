@@ -1,5 +1,3 @@
-# myResto
-
 # My Restaurant App
 
 Welcome to my restaurant app! Here are some screenshots:
