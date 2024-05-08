@@ -11,6 +11,7 @@ import RestaurantSearch from './component/RestaurantSearch';
 import RestaurantDetail from './component/RestaurantDetail';
 import Login from './component/Login';
 import Logout from './component/Logout';
+import OrderForm from './component/CloudKitchen/Order';
 // import Protected from './component/Protected';
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path='/logout' element={<Logout />} />
           <Route path='/login' element={<Login />} />
           <Route path="*" element={<PageNotFound />} />
+
+          <Route path='/order' element={<OrderForm />} />
         </Routes>
       </Router>
     </div>
